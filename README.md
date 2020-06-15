@@ -7,3 +7,5 @@ This is how it works:
 * Source App_Kapton/shiny-helper-kapton.R
 * Source App_Kapton app.R
 * ... and you're done. The app is deployed locally on your machine. 
+
+Note that you can change the hyperparameter of the Bayesian Optimization that is visualized in shiny-helper-kapton.R (lines 9-13).
