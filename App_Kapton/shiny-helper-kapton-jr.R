@@ -6,9 +6,9 @@ library(doParallel)
 library(randomForest)
 library(rgenoud)
 
-source("_Explore_Exploit_Measures/xplxplMBO-jr.R")
+source("helper_files/_Explore_Exploit_Measures/xplxplMBO-jr.R")
 
-source("read-data-kapton-jr.R")
+source("helper_files/read-data-kapton-jr.R")
 
 #global settings
 iters = 2
@@ -63,12 +63,12 @@ library(doParallel)
 library(checkmate)
 
 # Files to source
-source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/utils-iml-molnar.R")
-source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/inferTask-iml-molnar.R")
-source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/find_y-iml-molnar.R")
-source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/Data-iml-molnar.R")
-source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/PredictorAf-fc.R")
-source("_iml_tools/2.2_FeatureEffectMBO/FeatureEffectMBO-fc.R")
+source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/utils-iml-molnar.R")
+source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/inferTask-iml-molnar.R")
+source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/find_y-iml-molnar.R")
+source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/Data-iml-molnar.R")
+source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/PredictorAf-fc.R")
+source("helper_files/_iml_tools/2.2_FeatureEffectMBO/FeatureEffectMBO-fc.R")
 
 # different feature config. up to 2nd order iteractions
 first.order = list("power", "time", "pressure", "gas")
@@ -173,10 +173,7 @@ af = list(pdp = list(first = acquisition.pdp.first, second = acquisition.pdp.sec
 #The final results should be stored in a (nested) list (total elements = 36 * iters)
 fe.kapton = list(surrogate = surrogate, af = af)
 
-# # save results in path where app.R lies
-# save(fe.kapton, file = "_shiny_apps/App-Kapton/fe.kapton.RData")
-# rlist::list.save(fe.kapton, file = "_shiny_apps/App-Kapton/fe.kapton.test.RData")
-# saveRDS(fe.kapton, file = "_shiny_apps/App-Kapton/fe.kapton.rds")
+
 
 ############### PART TWO: Distance to Decision #################################
 ################################################################################
