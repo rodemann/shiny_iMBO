@@ -6,7 +6,7 @@ library(doParallel)
 library(randomForest)
 library(rgenoud)
 
-source("helper_files/_Explore_Exploit_Measures/xplxplMBO-jr.R")
+source("_Explore_Exploit_Measures/xplxplMBO-jr.R")
 
 source("helper_files/read-data-kapton-jr.R")
 
@@ -63,12 +63,12 @@ library(doParallel)
 library(checkmate)
 
 # Files to source
-source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/utils-iml-molnar.R")
-source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/inferTask-iml-molnar.R")
-source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/find_y-iml-molnar.R")
-source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/Data-iml-molnar.R")
-source("helper_files/_iml_tools/2.2_FeatureEffectMBO/PredictorAf/PredictorAf-fc.R")
-source("helper_files/_iml_tools/2.2_FeatureEffectMBO/FeatureEffectMBO-fc.R")
+source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/utils-iml-molnar.R")
+source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/inferTask-iml-molnar.R")
+source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/find_y-iml-molnar.R")
+source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/files_to_source-iml-molnar/Data-iml-molnar.R")
+source("_iml_tools/2.2_FeatureEffectMBO/PredictorAf/PredictorAf-fc.R")
+source("_iml_tools/2.2_FeatureEffectMBO/FeatureEffectMBO-fc.R")
 
 # different feature config. up to 2nd order iteractions
 first.order = list("power", "time", "pressure", "gas")
