@@ -4,4 +4,6 @@ This repository allows running an R Shiny App to visualizie interpretable Bayesi
 This is how it works:
 
 * First and foremost, clone this repo 
-* Open Kapton
+* Source App_Kapton/shiny-helper-kapton.R
+* Source App_Kapton app.R
+* ... and you're done. The app is deployed locally on your machine. 
