@@ -1,0 +1,12 @@
+name: App-01
+title: App-01
+username:
+account: rodemann
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2140652
+bundleId: 3044055
+url: https://rodemann.shinyapps.io/App-01/
+when: 1587477038.46219
+asMultiple: FALSE
+asStatic: FALSE
