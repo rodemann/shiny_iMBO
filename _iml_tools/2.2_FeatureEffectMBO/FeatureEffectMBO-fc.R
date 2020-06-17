@@ -154,7 +154,7 @@ FeatureEffectMBO = function(res.mbo,
         attributes = FALSE
       )
       df = cbind(seen.points[[x]], ic)
-      df = data.table::data.table(df)
+      df = data.table::data.table(df, stringsAsFactors = TRUE)
       data.table::setnames(df, "ic", infill.mbo)
       df = as.data.frame(df)
     })
