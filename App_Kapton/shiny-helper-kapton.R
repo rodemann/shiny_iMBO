@@ -191,6 +191,11 @@ pars = vars.total[which(vars.total != targets)]
 par.set = res.mbo$opt.path$par.set
 af.raw = res.mbo$control$infill.crit$fun
 seen.points = res.mbo$seen.points
+# edited
+for (i in 1:length(seen.points)) {
+  seen.points[[i]]$gas = as.factor(seen.points[[i]]$gas)
+}
+# end edited
 prop.points = opt.path[-(1:n.init), pars]
 #####
 
