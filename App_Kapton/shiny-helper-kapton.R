@@ -9,7 +9,7 @@ library(rgenoud)
 
 #source("_Explore_Exploit_Measures/xplxplMBO-jr.R")
 source("Tools_2_source/xplxplMBO.R")
-source("helper_files/read-data-kapton-jr.R")
+source("helper_files/read-data-kapton.R")
 
 #global settings
 iters = 2
