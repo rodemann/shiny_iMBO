@@ -12,7 +12,7 @@ library(foreach)
 library(iml)
 
 
-# FOR LAUNCHING: source helper file creating PDP objects only once
+# FOR LAUNCHING: source helper file creating all necessary objects 
 #source("shiny-helper-kapton-jr.R")
 
 ls()
